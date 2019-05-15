@@ -16,5 +16,6 @@
         "GOOGLE_CAPTCHA_SECRET" : "@google-captcha-secret",
         "GOOGLE_CAPTCHA_SITEKEY" : "@google-captcha-sitekey"
     },
-    "alias": "slack.cesko.digital"
+    "alias": "slack.cesko.digital",
+    "regions": ["bru1","cdg1","lhr1"]
 }
