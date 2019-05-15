@@ -7,6 +7,7 @@
       { "src": "lib/now.js", "use": "@now/node-server" }
     ],
     "routes": [
+      { "src": "/assets/(?<file>[^/]+)", "dest": "/lib/assets/$file" },
       { "src": "/(.*)", "dest": "/lib/now.js" }
     ],
     "env": {
@@ -14,5 +15,6 @@
         "SLACK_SUBDOMAIN" :"@slack-subdomain",
         "GOOGLE_CAPTCHA_SECRET" : "@google-captcha-secret",
         "GOOGLE_CAPTCHA_SITEKEY" : "@google-captcha-sitekey"
-    }
+    },
+    "alias": "slack.cesko.digital"
 }
