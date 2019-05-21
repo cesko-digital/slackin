@@ -3,19 +3,8 @@
     "public": true,
     "version": 2,
     "builds": [
-      { "src": "lib/assets/*", "use": "@now/static" },
-      { "src": "lib/now.js", "use": "@now/node-server" }
+      { "src": "index.html", "use": "@now/static" }
     ],
-    "routes": [
-      { "src": "/assets/(?<file>[^/]+)", "dest": "/lib/assets/$file" },
-      { "src": "/(.*)", "dest": "/lib/now.js" }
-    ],
-    "env": {
-        "SLACK_API_TOKEN": "@slack-api-token",
-        "SLACK_SUBDOMAIN" :"@slack-subdomain",
-        "GOOGLE_CAPTCHA_SECRET" : "@google-captcha-secret",
-        "GOOGLE_CAPTCHA_SITEKEY" : "@google-captcha-sitekey"
-    },
     "alias": "slack.cesko.digital",
     "regions": ["bru1","cdg1","lhr1"]
 }
